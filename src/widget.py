@@ -14,13 +14,12 @@ def mask_account_card(input_user: str) -> str:
 
     return print(result)
 
+
 mask_account_card(input())
 
 
 def get_data(date_user: str) -> str:
     return print(f'{date_user[8:10]}.{date_user[5:7]}.{date_user[0:4]}')
 
+
 get_data(input())
-    
-
-
