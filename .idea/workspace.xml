@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdd01f5a-60f0-4519-a1a5-3dddabab9328" name="Changes" comment="добавлены функции filter_by_state и sort_by_date">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="fdd01f5a-60f0-4519-a1a5-3dddabab9328" name="Changes" comment="добавлено содержание в README.md">
+      <change beforePath="$PROJECT_DIR$/src/processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <workItem from="1718899551051" duration="3764000" />
       <workItem from="1718910746861" duration="34551000" />
       <workItem from="1720954744093" duration="937000" />
-      <workItem from="1720957111144" duration="2292000" />
+      <workItem from="1720957111144" duration="3716000" />
     </task>
     <task id="LOCAL-00001" summary="add feature">
       <option name="closed" value="true" />
@@ -112,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720958899486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавлено содержание в README.md">
+      <option name="closed" value="true" />
+      <created>1720959434680</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720959434680</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,12 +129,13 @@
     <MESSAGE value="устранены ошибки по маскеровке счета и карты" />
     <MESSAGE value="add feature" />
     <MESSAGE value="добавлены функции filter_by_state и sort_by_date" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены функции filter_by_state и sort_by_date" />
+    <MESSAGE value="добавлено содержание в README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлено содержание в README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/job$widget.coverage" NAME="widget Coverage Results" MODIFIED="1720283981752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/pythonProject2$masks.coverage" NAME="masks Coverage Results" MODIFIED="1719858759979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/job$processing.coverage" NAME="processing Coverage Results" MODIFIED="1720958947586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/job$processing.coverage" NAME="processing Coverage Results" MODIFIED="1720960691582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/pythonProject2$widget.coverage" NAME="widget Coverage Results" MODIFIED="1719866206166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
