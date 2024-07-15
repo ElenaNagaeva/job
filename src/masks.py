@@ -5,6 +5,3 @@ def get_mask_card_number(number_card: str) -> str:
 
 def get_mask_account(number_account: str) -> str:
     return (f"**{number_account[-5:-1]}")
-
-
-
