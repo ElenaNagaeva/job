@@ -1,0 +1,27 @@
+Index: src/processing.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from typing import Any\n\n\ndef filter_by_state(input_data: list[dict[str, Any]], state_key: str = 'EXECUTED') -> list[dict[str, Any]]:\n    \"\"\"Функция фильтрации данных по ключу state\"\"\"\n    filter_list = []\n    for key in input_data:\n        if key.get('state') == state_key:\n            filter_list.append(key)\n    return filter_list\n\n\n\n\ndef sort_by_date(input_data: list[dict[str, Any]], reverse_list: bool = True) -> list[dict[str, Any]]:\n    \"\"\"Функция сортировки исходных данных по дате\"\"\"\n    sorted_list = sorted(input_data, key=lambda d: d['date'], reverse=reverse_list)\n    return sorted_list\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/processing.py b/src/processing.py
+--- a/src/processing.py	
++++ b/src/processing.py	
+@@ -1,5 +1,3 @@
+-from typing import Any
+-
+ 
+ def filter_by_state(input_data: list[dict[str, Any]], state_key: str = 'EXECUTED') -> list[dict[str, Any]]:
+     """Функция фильтрации данных по ключу state"""
+@@ -10,9 +8,8 @@
+     return filter_list
+ 
+ 
+-
+-
+ def sort_by_date(input_data: list[dict[str, Any]], reverse_list: bool = True) -> list[dict[str, Any]]:
+     """Функция сортировки исходных данных по дате"""
+     sorted_list = sorted(input_data, key=lambda d: d['date'], reverse=reverse_list)
+     return sorted_list
++
