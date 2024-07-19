@@ -6,7 +6,7 @@ def mask_account_card(input_user: str) -> str:
     number_spaces = 0
     for i in input_user:
         if i == " ":
-            number_spaces+=1
+            number_spaces += 1
     if len(input_user.split()[-1]) == 20:
         namber_account = get_mask_account(input_user)
         result = f'{input_user.split()[0]} {namber_account}'
@@ -16,7 +16,6 @@ def mask_account_card(input_user: str) -> str:
     elif number_spaces == 4:
         namber_card = get_mask_card_number(input_user[-19:])
         result = f'{input_user.split()[0]} {namber_card}'
-
 
     return result
 
