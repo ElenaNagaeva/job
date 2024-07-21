@@ -1,18 +1,15 @@
+def get_mask_card_number(card_number: str) -> str:
+    """Функция, которая маскирует номер карты"""
+    if len(card_number) == 16:
+        return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
+    elif card_number == "":
+        return "Нет номера карты"
+    else:
+        return "Неверный формат номера карты"
 
-def get_mask_card_number(number_card: str) -> str:
-    if len(number_card) != 16 and len(number_card) != 0:
-        return "Проверьте введеные данные карты"
-    elif number_card == '':
-        return "Вы не ввели номер карты"
-    elif len(number_card) == 16:
-        return (f"{number_card[0:4]} {number_card[4:6]}** **** " f"{number_card[-4:]}")
+
+def get_mask_account(mask_account: str) -> str:
+    """Функция, которая маскирует номер счета"""
+    return "**" + mask_account[-4:]
 
 
-
-def get_mask_account(number_account: str) -> str:
-    if len(number_account) != 20 and len(number_account) != 0:
-        return "Проверьте введеные данные счета"
-    elif number_account == '':
-        return "Вы не ввели номер счета"
-    elif len(number_account) == 20:
-        return (f"**{number_account[-4:]}")

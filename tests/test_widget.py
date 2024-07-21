@@ -1,23 +1,11 @@
-import pytest
-
-from src.widget import mask_account_card, get_data
-
-@pytest.mark.parametrize(
-    "string, expected",
-    [("MasterCard 7158300734726758", "MasterCard 7158 30** **** 6758"), ("Счет 73654108430135874305", "Счет **4305")],
-)
-def test_mask_account_card(string, expected: str) -> None:
-    assert mask_account_card(string) == expected
+from src.masks import get_mask_account, get_mask_card_number
 
 
-@pytest.fixture
-def date() -> str:
-    return "2018-07-11T02:26:18.671407"
+def test_get_mask_card_number() -> None:
+    assert get_mask_card_number("8990922113665229") == "8990 92** **** 5229"
+    assert get_mask_card_number("899092211366522") == "Неверный формат номера карты"
+    assert get_mask_card_number("") == "Нет номера карты"
 
 
-def test_get_data(date: str) -> None:
-    assert get_date(date) == "11.07.2018"
-
-
-
-
+def test_get_mask_account() -> None:
+    assert get_mask_account("73654108430135874305") == "**4305"
