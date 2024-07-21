@@ -21,4 +21,3 @@ def sort_by_date(info_states: list[dict[str, Any]], reverse: bool = True) -> lis
     """Функция сортировки операций по дате"""
     sorted_inform_state = sorted(info_states, key=lambda info_states: info_states["date"], reverse=reverse)
     return sorted_inform_state
-

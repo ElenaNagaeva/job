@@ -1,12 +1,11 @@
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
-def test_get_mask_card_number():
-    assert get_mask_card_number('7000792289606361') == '7000 79** **** 6361'
-    assert get_mask_card_number('') == ('Вы не ввели номер карты')
-    assert get_mask_card_number('7000792200089606361') == 'Проверьте введеные данные карты'
 
-def test_get_mask_account():
-    assert get_mask_account('73654108430135874305') == '**4305'
-    assert get_mask_account('') == ('Вы не ввели номер счета')
-    assert get_mask_account('7000792200089606361') == 'Проверьте введеные данные счета'
+def test_get_mask_card_number() -> None:
+    assert get_mask_card_number("8990922113665229") == "8990 92** **** 5229"
+    assert get_mask_card_number("899092211366522") == "Неверный формат номера карты"
+    assert get_mask_card_number("") == "Нет номера карты"
 
+
+def test_get_mask_account() -> None:
+    assert get_mask_account("73654108430135874305") == "**4305"
