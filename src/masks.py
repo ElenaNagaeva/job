@@ -14,4 +14,4 @@ def get_mask_account(number_account: str) -> str:
     return (f"**{number_account[-4:]}")
 
 
-print(get_mask_account("73654108430135874305"))
+
