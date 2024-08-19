@@ -22,12 +22,14 @@ def mask_account_card(input_user: str) -> str:
 
 
 
-print(mask_account_card("Visa Platinum 8990922113665229"))
+
 
 
 def get_data(date_user: str) -> str:
     """Функция преобразования даты в формат дд.мм.гггг"""
     return f'{date_user[8:10]}.{date_user[5:7]}.{date_user[0:4]}'
+
+
 
 
 
